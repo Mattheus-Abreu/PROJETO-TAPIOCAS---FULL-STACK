@@ -58,7 +58,7 @@ function showCartItem(fillingCart, id) {
 
     var foodBase = document.createElement("h3")
     foodBase.innerHTML = `${nameFoods[id - 1]} - R$ ${valueBaseFood.toFixed(2)}`
-    itemCart.appendChild(foodBase);
+    itemCart.appendChild(foodBase)
 
     description = nameFoods[id - 1] + "; "
 
@@ -69,8 +69,8 @@ function showCartItem(fillingCart, id) {
         itemCart.appendChild(itemFilling)
     }
 
-    var totalElement = document.getElementById("total");
-    totalElement.textContent = `Total: R$ ${totalValue.toFixed(2)}`;
+    var totalElement = document.getElementById("total")
+    totalElement.textContent = `Total: R$ ${totalValue.toFixed(2)}`
 }
 
 function imgFood(id){
@@ -93,14 +93,14 @@ function imgFood(id){
     case "3":
       imgGetFood.setAttribute("src", "https://i.pinimg.com/originals/e5/c3/5e/e5c35e716e592e7986d160436127160d.jpg")
       imgGetFood.setAttribute("alt", "Sanduiche")
-      break;
+      break
 
     default:
       console.error("ID inválido!")
-      return;
+      return
   }
 
-  imgMain.appendChild(imgGetFood);
+  imgMain.appendChild(imgGetFood)
 
 }
 
@@ -151,22 +151,22 @@ async function getHistory() {
 }
 
 function makePayment() {
-  var cpf = document.getElementById("cpf").value.trim();
+  var cpf = document.getElementById("cpf").value.trim()
   if (!cpf) {
-      alert("Por favor, digite seu CPF para finalizar o pedido.");
-      return;
+      alert("Por favor, digite seu CPF para finalizar o pedido.")
+      return
   }
 
-  var idFood = getSelectedFoodId();
-  var description = getDescription();
-  var value = totalValue.toFixed(2);
+  var idFood = getSelectedFoodId()
+  var description = getDescription()
+  var value = totalValue.toFixed(2)
 
-  var url = `http://localhost:8080/payment?idFood=${idFood}&cpf=${cpf}&description=${description}&value=${value}`;
+  var url = `http://localhost:8080/payment?idFood=${idFood}&cpf=${cpf}&description=${description}&value=${value}`
 
   fetch(url, { method: "GET" }).then(response => response.text()).then(result => {
-          alert(result);
-          clearCart();
-          totalValue = 0;
+          alert(result)
+          clearCart()
+          totalValue = 0
       })
 }
 
