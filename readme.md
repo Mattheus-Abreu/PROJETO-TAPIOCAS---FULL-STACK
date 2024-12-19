@@ -11,29 +11,29 @@
 
 ## Modelagem de Dados
 ### Tabela de Comidas
-![alt text](image.png)
+![alt text](FRONT-END/image.png)
 
 ### Tabela de Recheios
-![alt text](image-1.png)
+![alt text](FRONT-END/image-1.png)
 
 ### Tabela de Pedidos
-![alt text](image-2.png)
+![alt text](FRONT-END/image-2.png)
 
 ## Endpoint do Backend
 
 ### /foods
-![alt text](image-3.png)
+![alt text](FRONT-END/image-3.png)
 
 ### /history
-![alt text](image-4.png)
+![alt text](FRONT-END/image-4.png)
 
 ### /payment
 "Pagamento realizado com sucesso"
 
 ## Front-End
-![alt text](image-5.png)
+![alt text](FRONT-END/image-5.png)
 
-![alt text](image-6.png)
+![alt text](FRONT-END/image-6.png)
 
 ## Considerações Finais
 
