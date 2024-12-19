@@ -1,0 +1,218 @@
+body{
+    background-color: #1d44b8;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.welcome{
+    font-size: 11px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #2b58de;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 9px;
+    width: 270px;
+    height: 80px;
+    word-wrap: break-word;
+
+}
+
+.opcFoods{
+    display: flex;
+    flex-direction: row;
+    gap: 40px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.history{
+    background-color: #2b58de;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    border-radius: 10px;
+    height: 80px;
+    border: 3px white solid;
+    align-items: center;
+
+}
+
+.history:hover{
+    background-color: rgb(214, 214, 214);
+    border:3px #2b58de solid;
+    border-radius: 10px;
+    color: #2b58de;
+
+}
+
+.cpf{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b58de;
+    height: 50px;
+    margin: 15px;
+    border: white 3px solid;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+
+}
+
+.request{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+.fillings{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: whitesmoke;
+    flex: 1;
+    gap: 20px;
+    height: 400px;
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+
+}
+
+.optionFilling{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.imgFood{
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    flex: 1;
+    gap: 20px;
+    height: 400px;
+    width: 100%;
+    border-radius: 25px;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.imgFood img{
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+
+}
+
+
+
+.cart{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+    flex: 1;
+    gap: 20px;
+    height: 400px;
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;   
+}
+
+
+.footersale{
+    font-family: Verdana, Geneva, TTahoma, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buy{
+    background-color: #4CAF50;
+    color: whitesmoke;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px whitesmoke solid;
+}
+
+.buy:hover{
+    background-color: rgb(184, 184, 184);
+    border:1px #216425 solid;
+    border-radius: 5px;
+    color: black;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+
+  .modal-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 3px solid #2b58de;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .closeButton:hover {
+    color: black;
+  }
+
+#historyTable{
+    width: 100%;
+    border-collapse: collapse;
+}

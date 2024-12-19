@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neto Lanches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="Neto_Lanches.png"/>
+</head>
+<body>
+
+    <div class="all">
+        <div class="header">
+            <div class="welcome"><h1>Seja bem-vindo ao Neto Lanches</h1></div>
+            <div class="opcFoods">
+                <div class="tapioca"><input onchange="getFoods(this.value)" type="radio" name="food" value="1"/> Tapioca</div>
+                <div class="cuscuz"><input onchange="getFoods(this.value)" type="radio" name="food" value="2"/> Cuscuz</div>
+                <div class="sanduiche"><input onchange="getFoods(this.value)" type="radio" name="food" value="3"/> Sanduiche</div>
+
+            </div>
+            <button onclick="openModal()" id="openModalButton" class="history">Histórico</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="closeButton" onclick="closeModal()">&times;</span>
+                  <h2>Tabela de Vendas</h2>
+                  <table id="historyTable" border="1">
+                    <thead>
+                      <tr>
+                        <th>CPF</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+        </div>
+
+        
+
+        <div class="cpf">
+            <label for="cpf">CPF do comprador:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+        </div>
+
+        
+
+        <div class="request">
+            
+            <div class="fillings">
+
+
+            </div>
+
+            <div class="imgFood">
+                
+            </div>
+
+
+            <div class="cart">
+                <h3>Pedido</h3>
+                <div class="cartItem"></div>
+                <div class="footersale">
+                    <div id="total"></div>
+                    <button class="buy" onclick="makePayment()">Finalizar compra</button>
+                </div> 
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
